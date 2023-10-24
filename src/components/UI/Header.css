@@ -1,0 +1,50 @@
+/* src/components/Header.css */
+* {
+    font-family: B-Nazanin;
+    
+}
+.header {
+    padding: 20px;
+    background-color: #333; /* You can change this to your desired color */
+    color: white;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__phone {
+    margin: 5px 0;
+}
+
+.header__phone a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #ddd;
+    }
+}
+.header__phone {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.header__logo {
+    background-image: url("../../logo.png");
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+    }
+}

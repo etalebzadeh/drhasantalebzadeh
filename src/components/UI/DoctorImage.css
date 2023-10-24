@@ -1,0 +1,75 @@
+/* src/components/DoctorImage.css */
+
+.doctor-image {
+    position: relative;
+    width: 700px;
+    height: calc(700px / 2.38);
+    margin-left: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.doctor-image__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.doctor-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;  /* default is hidden */
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.info-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;  /* To ensure the button is above the caption */
+}
+
+.info-button:hover {
+    background-color: #555;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* When the caption is ON, adjust the image's opacity */
+.doctor-image[data-caption-visible="true"] .doctor-caption {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.doctor-image[data-caption-visible="true"] .doctor-image__photo {
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+    .doctor-image {
+        width: 100%;  /* Taking the full width on mobile screens */
+        height: calc(100vw / 2.38);  /* Matching the aspect ratio for mobile using viewport width */
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,41 @@
+/* src/components/TitleAndLogo.css */
+
+.title-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    
+}
+
+.title-logo {
+    display: flex;
+    align-items: center;
+}
+
+.title-logo__image {
+    width: 150px;  /* Adjust according to your logo's design */
+    height: auto;
+    margin-right: 20px;  /* Space between logo and title on large screens */
+}
+
+.title-logo__text {
+    font-family: B-Nazanin;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: black;  /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+    .title-logo-container {
+        flex-direction: column;
+    }
+    .title-logo__image {
+        margin-right: 0;
+    }
+    .title-logo__text {
+        font-size: 24px;
+    }
+}

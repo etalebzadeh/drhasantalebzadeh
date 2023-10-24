@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;  /* Center grid items horizontally */
+    align-items: center;  /* Center grid items vertically */
+    grid-row-gap: 5px;  /* Adjust this for the gap between rows */
+      
+    width: 70%; 
+    margin: 0 auto; /* This will center the grid-container */
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

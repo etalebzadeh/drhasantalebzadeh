@@ -1,0 +1,39 @@
+.slider_two {
+    position: relative;
+    height: 150px; /* since you want the images to be of height 150px */
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Hides the images that overflow the container */
+    
+}
+
+.slide-holder {
+    display: flex;
+    gap: 0
+}
+
+.slide_two {
+  flex: 0 0 auto; /* This indicates that each slide has the automatic base size and doesn’t grow or shrink from it */
+  width: 150px; /* fixed width of each slide */
+  height: 150px; /* fixed height, as you want all images to be squares */
+  position: relative; 
+}
+
+.image {
+    width: 100%; /* explicit width */
+    height: 150px; /* explicit height */
+    object-fit: cover; /* Ensures images cover the area without distortion, adjusting the object position */
+}
+
+/* Your button styles remain unchanged */
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .slide_two {
+    width: 75px; /* smaller size for smaller screen */
+  }
+  .image {
+    width: 75px;
+    height: 75px;
+  }
+}

@@ -1,0 +1,45 @@
+/* src/components/Header.css */
+* {
+    font-family: B-Nazanin;
+    
+}
+.Menu {
+    padding-right: 20px;
+    background-image: url("../../menu.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.Menu__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Menu_item {
+    margin: 5px 5px;
+    color: black
+}
+
+.Menu_item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    color: black;
+    border-left: black solid 1px;
+    padding: 3px;
+
+    &:hover {
+        color: #791313;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,38 @@
+.square {
+    font-family: B-Nazanin;
+    width: 100px;  /* Increased from 100px */
+    height: 100px; /* Increased from 100px */
+    background-color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.square-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.square-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent background for caption */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.square:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}

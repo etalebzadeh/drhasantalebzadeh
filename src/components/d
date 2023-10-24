@@ -1,0 +1,12 @@
+const images = [
+  '/images/pics/cli1.jpg',
+  '/images/pics/cli2.jpg',
+  '/images/pics/cli3.jpg',
+  '/images/pics/cli4.jpg',
+  '/images/pics/cli5.jpg',
+  '/images/pics/cli6.jpg',
+  '/images/pics/cli7.jpg',
+  '/images/pics/cli8.jpg',
+  '/images/pics/cli9.jpg',
+  // ... add all 9 images
+];
