@@ -4,25 +4,25 @@ import "./SocialMediaBar.css";
 function SocialMediaBar() {
     return (
         <div className="social-media-bar">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href=" https://wa.me/00989155058054" target="_blank" rel="noreferrer">
                 <img src="/images/whatsapp.png" alt="Twitter" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://https://t.me/00989155058054" target="_blank" rel="noreferrer">
                 <img src="/images/telegram.png" alt="Twitter" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <img src="/images/instagram.png" alt="Twitter" />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            </a> */}
+            {/* <a href="https://facebook.com" target="_blank" rel="noreferrer">
                 <img src="/images/facebook.png" alt="Facebook" />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            </a> */}
+            <a href="https://fac" target="_blank" rel="noreferrer">
                 <img src="/images/eitaa.png" alt="Facebook" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noreferrer">
                 <img src="/images/youtube.png" alt="Twitter" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
                 <img src="/images/rubika.png" alt="Twitter" />
             </a>
         </div>

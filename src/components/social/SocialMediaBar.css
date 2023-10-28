@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
     .social-media-bar a img {
-        width: 20px; /* Half the size */
+        width: 30px; /* Half the size */
         height: auto;
     }
 }
