@@ -6,7 +6,6 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
-    
 }
 
 .title-logo {
@@ -15,14 +14,13 @@
 }
 
 .title-logo__image {
-    width: 150px;  /* Adjust according to your logo's design */
     height: auto;
-    margin-right: 20px;  /* Space between logo and title on large screens */
+    margin-right: 20px;  
 }
 
 .title-logo__text {
     font-family: B-Nazanin;
-    font-size: 32px;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
     color: black;  /* Adjust as needed */
@@ -37,5 +35,19 @@
     }
     .title-logo__text {
         font-size: 24px;
+    }
+}
+
+/* Enhanced media query specifically for iMac 21.5" */
+@media screen and (min-width: 1920px) {
+    .title-logo-container {
+        width: 95%;
+        padding: 70px 0; /* Increase padding for a more spaced-out look */
+    }
+    .title-logo__text {
+        font-size: 5.5rem; /* Larger font size for the title */
+    }
+    .title-logo__image {
+        max-width: 150px; /* Optional: set a max-width for the logo if it appears too big. Adjust as necessary. */
     }
 }

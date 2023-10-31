@@ -1,16 +1,16 @@
 /* src/components/Header.css */
 * {
     font-family: B-Nazanin;
-    
 }
+
 .header {
-    padding: 20px;
-    background-color: #333; /* You can change this to your desired color */
+    padding: 30px; /* Increased padding */
+    background-color: #333; 
     color: white;
 }
 
 .header__container {
-    max-width: 1200px;
+    max-width: 1500px; /* Increased max-width */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -26,25 +26,39 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px; /* Slightly increased font size */
     transition: color 0.3s;
 
     &:hover {
         color: #ddd;
     }
 }
+
 .header__phone {
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px; /* Slightly increased font size */
 }
+
 .header__logo {
     background-image: url("../../logo.png");
     z-index: 1;
 }
 
+/* Existing media query for mobile devices */
 @media (max-width: 768px) {
     .header__container {
         flex-direction: column;
+    }
+}
+
+/* New media query specifically for iMac 21.5" */
+@media (min-width: 1920px) {
+    .header__container {
+        max-width: 1700px; /* Use more horizontal space */
+    }
+
+    .header__phone a, .header__phone {
+        font-size: 24px; /* Use larger font size for better readability */
     }
 }

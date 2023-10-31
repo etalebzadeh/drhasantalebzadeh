@@ -1,7 +1,7 @@
 .square {
     font-family: B-Nazanin;
-    width: 100px;  /* Increased from 100px */
-    height: 100px; /* Increased from 100px */
+    width: 150px;  /* Increased from 100px */
+    height: 150px; /* Increased from 100px */
     background-color: #f0f0f0;
     position: relative;
     overflow: hidden;
@@ -34,5 +34,16 @@
     .square {
         width: 100px;
         height: 100px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .square {
+        width: 15rem;
+        height: 15rem;
+    }
+    .square-caption {
+       
+        font-size: 2em;
     }
 }

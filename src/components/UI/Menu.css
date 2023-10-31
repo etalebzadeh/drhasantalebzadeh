@@ -1,8 +1,7 @@
-/* src/components/Header.css */
 * {
     font-family: B-Nazanin;
-    
 }
+
 .Menu {
     padding-right: 20px;
     background-image: url("../../menu.jpg");
@@ -20,7 +19,7 @@
 
 .Menu_item {
     margin: 5px 5px;
-    color: black
+    color: black;
 }
 
 .Menu_item a {
@@ -39,7 +38,19 @@
 }
 
 @media (max-width: 768px) {
-    .header__container {
+    .Menu__container {  /* Fixed class name */
         flex-direction: column;
+    }
+}
+
+/* New media query specifically for iMac 21.5" */
+@media (min-width: 1920px) {
+    .Menu__container {
+        max-width: 1600px;  /* Wider container for larger screen */
+    }
+
+    .Menu_item a {
+        font-size: 22px;  /* Slightly bigger font size for the menu items */
+        padding: 5px;     /* Increased padding */
     }
 }

@@ -1,18 +1,18 @@
 .footer-container {
     display: flex;
-    height:500px;
-    justify-content: center;
+    height: 200px;
+    justify-content: space-around;
     align-items: center;
     border-radius: 5px;
-    border: solid white 2px;
-    margin:5px;
+   
+    margin: 5px;
     background-image: url("../../yellow.jpg");
     background-size: cover;
 }
 
 .footer-row {
     border-radius: 8px;
-    border: white 2px black;
+   
     margin: 5px;
     width: 32%;
     height: 100%;
@@ -21,9 +21,11 @@
 .footer-logo {
     margin: 5px;
     background-image: url("../../logo.png");
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
-    background-size:contain
-    
+    background-repeat: no-repeat;
+    background-size: contain; /* Added missing semicolon */
+    /* If the div is expected to display the background image, you need to set a default width and height. */
+    width: 100px; /* Example width */
+    height: 100px; /* Example height */
 }
 
 .footer-image {
@@ -33,45 +35,74 @@
 }
 
 .image-box {
-    width: 230px;
-    height: 230px;
-    padding: 4px;
+    width: 200px;
+    height: 200px;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
 }
+
 .address p {
     font-family: B-Nazanin;
-    
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     .footer-container {
       width: 100%;
-      height: 280px;
-      align-items:normal
+      height: 150px;
+      align-items: normal;
     }
-    .footer-logo {
-        width:50%;
-        height: 80%;
-        
-    }
-    
-    .footer-image {
-        display: none;       
-        
-    }
-    .address p {
-        font-family: B-Nazanin;
-        font-size: x-small;
-        font-weight: bold;
-    }
-    .address {
 
+    .footer-logo {
+        width: 50%;
+        height: 80%;
+    }
+
+    .footer-image {
+        display: none;
+    }
+
+    .address p {
+        font-size: x-small;
+    }
+
+    .address {
         width: 50%;
     }
+}
 
-  }
-  
+@media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+    .footer-container {
+        height: 300px;
+        margin: 30px;
+    }
+
+    .footer-row {
+        border: 3px solid white;
+        margin: 20px;
+    }
+
+    .footer-logo {
+        margin: 20px;
+        width: 150px; /* Adjusted width for the larger screen, assuming it's a container for the logo */
+        height: 150px; /* Adjusted height */
+    }
+
+    .footer-image {
+        width: 300px; /* Adjusted width for the larger screen */
+    }
+
+    .image-box {
+        width: 250px;
+        height: 250px;
+    }
+
+    .address p {
+        font-size: 2.5rem; /* Increased font size for better readability on larger screens */
+    }
+
+}

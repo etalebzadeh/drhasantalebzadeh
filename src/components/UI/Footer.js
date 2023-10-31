@@ -10,9 +10,7 @@ function Footer() {
           <div className='image-box'>
            <img src="/images/pics/c-cli2.jpg" />          
           </div>
-          <div className='image-box'>
-           <img src="/images/pics/footer1.jpg" />          
-          </div>          
+          
         </div>
         <div className='address'>
           <p>ساعت کاری:بعدازظهر - ۰۴:۰۰- ۱۰:۰۰</p>
